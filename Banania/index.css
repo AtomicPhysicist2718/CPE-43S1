@@ -1,0 +1,119 @@
+body {
+  background-color: powderblue;
+  color: black;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+body.dark-mode .card {
+  background-color: #333;
+  border-color: #555;
+  color: #f0f0f0;
+}
+
+body.dark-mode h1 {
+  color: #ffcc00;
+}
+
+body.dark-mode p {
+  color: #ff6b6b;
+}
+
+body.dark-mode .btn {
+  background-color: #555;
+  color: #f0f0f0;
+}
+
+body.dark-mode .btn:hover {
+  background-color: #777;
+}
+
+h1 {
+  color: blue;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight:bold;
+  text-align: center;
+}
+p {
+  color: red;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight:bold;
+}
+
+li {   
+  font-family: 'Courier New', Courier, monospace;
+  text-align: justify;
+  text-align:left;  
+
+}
+
+img {
+   align-items: center;
+   width: 100%;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.card ul {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.card-container {
+  display:flexbox;
+  justify-content: center;
+  gap: 20px; 
+  flex-wrap:nowrap; 
+  padding: 20px;
+  flex-direction: row;
+}
+
+
+.btn {
+  display:inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff6347; 
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #e5533d; 
+}
+
+
+.ingredients {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+.ingredients.show {
+  max-height: 1000px; 
+}
